@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101013;
+    color: #EAE6E1;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(53, 53, 63, 0.6);
+    backdrop-filter: blur(2px);
+    min-height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* General */
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
+.works li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.works img {
+    display: block;
+    min-width: 20vw;
+    max-width: 20vw;
+    max-height: auto;
+    border-radius: 7px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+section {
+    padding: 5% 10%;
+}
+
+section p {
+    color: #B69A75;
+    font-size: 13px;
+    letter-spacing: 6px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+a {
+    display: flex;
+    transition: filter 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    letter-spacing: 3px;
+    font-size: 40px;
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    color: #eae6e100;
+    transition: color 0.5s ease;
+}
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+}
+
+#clickable a:hover {
+    img{
+        filter: blur(2px) brightness(0.5);
+    }
+    h3 {
+        color: #EAE6E1;
+    }
+}
+
+/* Written Section */
+.written {
+    background:
+        linear-gradient(
+            180deg in oklch,
+            #101013,
+            rgba(121, 126, 65, 0.20)
+        )
+}
+
+.written li {
+    border: 2px solid #B69A75;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Visual Section */
+.visual {
+    background:
+        linear-gradient(
+            180deg in oklch,
+            #131013,
+            rgba(126, 65, 111, 0.2)
+        )
+}
+
+.visual li {
+    border: 2px solid rgba(126, 65, 111);
+    border-radius: 8px;
+}
+/* Digital Section */
+.digital {
+    background:
+        linear-gradient(
+            180deg in oklch,
+            #101013,
+            rgba(65, 126, 111, 0.2)
+        )
+}
+
+.digital li {
+    border: 2px solid rgba(65, 126, 111);
+    border-radius: 8px;
+}
